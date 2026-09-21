@@ -1,0 +1,25 @@
+body{
+    margin:0px;
+    padding:0;
+    background-color:maroon;
+    color:rgba(255, 197, 7, 0.774);
+    
+
+}
+body h1:hover{
+    color:bisque;
+}
+nav{
+    background-color:black;
+    padding: 20px;
+    text-align: center;
+}
+nav a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: chocolate;
+    font-weight: bold;
+}
+nav a:hover{
+    text-decoration: underline;
+}
