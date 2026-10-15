@@ -17,7 +17,11 @@
 		},
 		{
 			label: 'Gallery', href: '/gallery'
+		},
+		{
+			label: 'Courses', href: '/courses'
 		}
+
 	];
 
 		let { children } = $props();

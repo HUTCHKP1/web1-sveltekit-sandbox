@@ -21,7 +21,7 @@
     <h1>Our Courses</h1>
 
     {#each courses as course}
-    <a href = {`/courses/${courses.slug}`}>
+    <a href = {`/courses/${course.slug}`}>
     <Card
         title={course.title}
         description={course.description}

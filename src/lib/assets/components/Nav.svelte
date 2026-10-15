@@ -5,35 +5,26 @@
 
     <ul>
         {#each items as item}
-        <li>
+        <!-- <li> -->
             <a href={item.href}>{item.label}</a>
-        </li>
+        <!-- </li> -->
         {/each}
         </ul>
 </nav>
 
 <style>
-    nav
-    {
-        border-top: 1px solid #ccc;
-        margin-top: 1rem;
-        padding-top: 1rem;
+    nav{
+    background-color:black;
+    padding: 20px;
+    text-align: center;
     }
-    ul
-    {
-        display: flex;
-        gap: 1.5rem;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    a
-    {
-        color: lightsalmon;
+    nav a{
+        margin: 0 15px;
         text-decoration: none;
+        color: chocolate;
+        font-weight: bold;
     }
-    a:hover
-    {
-        text-decoration: wavy, underline;
+    nav a:hover{
+        text-decoration: underline;
     }
-</style>
+ </style>

@@ -1,3 +1,7 @@
+<script>
+    import Header from '$lib/assets/components/Header.svelte'
+    import Card from '$lib/assets/components/Card.svelte'
+</script>
 <svelte:head>
     <title>SvelteKit Components  Demo</title>
     <meta name="description" content = "A demonstration of reusable SvelteKit components and props." />
@@ -8,7 +12,7 @@
    
 />
 <main>
-    <h2>Our Example Card</h2>
+    <h2>Our Example Cards</h2>
 
     <Card
         title = "Learning SvelteKit"
