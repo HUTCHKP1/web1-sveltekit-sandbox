@@ -1,27 +1,22 @@
-<script>
-    let title = $state("Home");
-    import Card from "$lib/assets/components/Card.svelte";
-</script>
-
-<h1>{title} - Portfolio</h1>
-<p>Welcome to my home page!</p>
-<!-- <nav>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/content">Content</a>
-    <a href="/gallery">Gallery</a>
-</nav> -->
+<svelte:head>
+    <title>SvelteKit Components  Demo</title>
+    <meta name="description" content = "A demonstration of reusable SvelteKit components and props." />
+</svelte:head>
+<Header
+    title = "Welcome to Web Development"
+    subtitle = "Learning reusable components and props"
+   
+/>
 <main>
-    <Card />
-    <Card />
-    <Card />
+    <h2>Our Example Card</h2>
+
+    <Card
+        title = "Learning SvelteKit"
+        description = "Components let us reuse interface elements across our application"
+    />
+    <Card
+        title = "Understanding Props"
+        description = "Props allow us to customise each component with different data"
+    />
 </main>
 
-<style>
-    main{
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-</style>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>

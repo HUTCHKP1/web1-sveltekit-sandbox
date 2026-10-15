@@ -3,15 +3,32 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import Header from '$lib/assets/components/Header.svelte';
 	import Footer from '$lib/assets/components/Footer.svelte';
+	import Card from "$lib/assets/components/Card.svelte";
 
-	let { children } = $props();
+	const navigationLinks = [
+		{
+			label: 'Home', href: '/'
+		},
+		{
+			label: 'About', href: '/about'
+		},
+		{
+			label: 'Content', href: '/content'
+		},
+		{
+			label: 'Gallery', href: '/gallery'
+		}
+	];
+
+		let { children } = $props();
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
-<Header />
-
+<Header 
+ navItems = {navigationLinks}
+ />
 {@render children()}
 
-<Footer />
+<Footer course = "ID512 Web Development" year = {2026} />
